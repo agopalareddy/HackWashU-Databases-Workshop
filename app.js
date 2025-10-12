@@ -1,5 +1,16 @@
-// Helper to load .env file and parse key-value pairs
-async function loadEnv() {
+// Helper to load config from PUBLIC_CONFIG (for GitHub Pages) or .env locally
+async function loadConfig() {
+  if (
+    window.PUBLIC_CONFIG &&
+    window.PUBLIC_CONFIG.SUPABASE_URL &&
+    window.PUBLIC_CONFIG.SUPABASE_ANON_KEY
+  ) {
+    return {
+      SUPABASE_URL: window.PUBLIC_CONFIG.SUPABASE_URL,
+      SUPABASE_ANON_KEY: window.PUBLIC_CONFIG.SUPABASE_ANON_KEY,
+    };
+  }
+  // Fallback for local development
   const response = await fetch(".env");
   const text = await response.text();
   const env = {};
@@ -13,7 +24,7 @@ async function loadEnv() {
 }
 
 (async () => {
-  const env = await loadEnv();
+  const env = await loadConfig();
   const SUPABASE_URL = env.SUPABASE_URL;
   const SUPABASE_ANON_KEY = env.SUPABASE_ANON_KEY;
   // Correctly initialize the Supabase client
