@@ -20,6 +20,3 @@ __pycache__/
 *.pptx
 # VS Code
 .vscode/
-
-# Client-side config containing public keys (do not commit secrets)
-config.js
