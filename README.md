@@ -69,6 +69,19 @@ Welcome to the HackWashU Databases Workshop! This project is designed to introdu
      ```
   3. Open [http://localhost:8000/index.html](http://localhost:8000/index.html)
 
+- **Live demo (GitHub Pages):**
+  - URL: [https://agopalareddy.github.io/HackWashU-Databases-Workshop/](https://agopalareddy.github.io/HackWashU-Databases-Workshop/)
+  - For Pages deployments, do NOT commit secrets. The app prefers `.env` locally; for demos you can create a local `config.js` (not committed, ignored by `.gitignore`) with:
+
+    ```js
+    window.PUBLIC_CONFIG = {
+      SUPABASE_URL: "https://your-project.supabase.co",
+      SUPABASE_ANON_KEY: "your-anon-key",
+    };
+    ```
+
+    This is suitable for public demos because the Supabase anon key is designed to be public, but still treat it carefully and rely on RLS policies.
+
 ---
 
 ## Supabase Setup Notes
