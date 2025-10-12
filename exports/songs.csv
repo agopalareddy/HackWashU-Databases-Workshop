@@ -1,0 +1,499 @@
+id,title,album_id,created_at
+1,"Too Much Love Will Kill You (Live in Modena, 2003)",1,2025-10-12 05:19:38
+2,Bohemian Rhapsody,2,2025-10-12 05:19:38
+3,We Will Rock You,2,2025-10-12 05:19:38
+4,Don't Stop Me Now,2,2025-10-12 05:19:38
+5,Another One Bites the Dust,2,2025-10-12 05:19:38
+6,Somebody to Love,2,2025-10-12 05:19:38
+7,Under Pressure,3,2025-10-12 05:19:38
+8,We Are the Champions,2,2025-10-12 05:19:38
+9,Fat Bottomed Girls (Single Version),2,2025-10-12 05:19:38
+10,Killer Queen,2,2025-10-12 05:19:38
+11,Radio Ga Ga,2,2025-10-12 05:19:38
+12,Crazy Little Thing Called Love,2,2025-10-12 05:19:38
+13,I Want to Break Free (Single Remix),2,2025-10-12 05:19:38
+14,Queen,4,2025-10-12 05:19:38
+15,Queen,5,2025-10-12 05:19:38
+16,Queen,6,2025-10-12 05:19:38
+17,Queen (feat. Quinn XCII),7,2025-10-12 05:19:38
+18,Queen,8,2025-10-12 05:19:38
+19,Queen,9,2025-10-12 05:19:38
+20,Queen,10,2025-10-12 05:19:38
+21,QUEEN,11,2025-10-12 05:19:38
+22,Queen,12,2025-10-12 05:19:38
+23,Queen,13,2025-10-12 05:19:38
+24,Queen,14,2025-10-12 05:19:38
+25,Queen,15,2025-10-12 05:19:38
+26,Queen,16,2025-10-12 05:19:38
+27,Queen,17,2025-10-12 05:19:38
+28,Queen (feat. Mimi Imfurst),18,2025-10-12 05:19:38
+29,Queen,19,2025-10-12 05:19:38
+30,Queen,20,2025-10-12 05:19:38
+31,Queen,21,2025-10-12 05:19:38
+32,QUEEN,22,2025-10-12 05:19:38
+33,Queen,23,2025-10-12 05:19:38
+34,Queen,24,2025-10-12 05:19:38
+35,Queen,25,2025-10-12 05:19:38
+36,Queen,26,2025-10-12 05:19:38
+37,Queen (feat. Clairo),27,2025-10-12 05:19:38
+38,queen,28,2025-10-12 05:19:38
+39,QUEEN,29,2025-10-12 05:19:38
+40,Queen (feat. Chronixx),30,2025-10-12 05:19:38
+41,Queen (feat. SefaM),31,2025-10-12 05:19:38
+42,Queen,32,2025-10-12 05:19:38
+43,QUEEN,33,2025-10-12 05:19:38
+44,Queen,34,2025-10-12 05:19:38
+45,Another One Bites the Dust,35,2025-10-12 05:19:38
+46,Queen,36,2025-10-12 05:19:38
+47,Queen (feat. Odd Panda),37,2025-10-12 05:19:38
+48,Under Pressure,38,2025-10-12 05:19:38
+49,Bohemian Rhapsody,39,2025-10-12 05:19:38
+50,Queen,40,2025-10-12 05:19:38
+51,Stairway to Heaven,41,2025-10-12 05:19:38
+52,Immigrant Song,42,2025-10-12 05:19:38
+53,Whole Lotta Love,43,2025-10-12 05:19:38
+54,Kashmir,44,2025-10-12 05:19:38
+55,Black Dog,41,2025-10-12 05:19:38
+56,Ramble On,43,2025-10-12 05:19:38
+57,Going to California,41,2025-10-12 05:19:38
+58,When the Levee Breaks,41,2025-10-12 05:19:38
+59,Over the Hills and Far Away,45,2025-10-12 05:19:38
+60,All My Love,46,2025-10-12 05:19:38
+61,"Hey, Hey, What Can I Do",47,2025-10-12 05:19:38
+62,Fool In the Rain,46,2025-10-12 05:19:38
+63,Dazed and Confused,48,2025-10-12 05:19:38
+64,Rock and Roll,41,2025-10-12 05:19:38
+65,Led Zeppelin,49,2025-10-12 05:19:38
+66,D'yer Mak'er,45,2025-10-12 05:19:38
+67,Good Times Bad Times,48,2025-10-12 05:19:38
+68,Babe I'm Gonna Leave You,48,2025-10-12 05:19:38
+69,Misty Mountain Hop,41,2025-10-12 05:19:38
+70,The Ocean,45,2025-10-12 05:19:38
+71,Heartbreaker,43,2025-10-12 05:19:38
+72,What Is and What Should Never Be,43,2025-10-12 05:19:38
+73,Tangerine,42,2025-10-12 05:19:38
+74,The Rain Song,45,2025-10-12 05:19:38
+75,Thank You,43,2025-10-12 05:19:38
+76,Ten Years Gone,44,2025-10-12 05:19:38
+77,Houses of the Holy,44,2025-10-12 05:19:38
+78,The Battle of Evermore,41,2025-10-12 05:19:38
+79,No Quarter,45,2025-10-12 05:19:38
+80,Since I've Been Loving You,42,2025-10-12 05:19:38
+81,Ramble On,50,2025-10-12 05:19:38
+82,Communication Breakdown,48,2025-10-12 05:19:38
+83,Immigrant Song,51,2025-10-12 05:19:38
+84,Living Loving Maid (She's Just a Woman),43,2025-10-12 05:19:38
+85,Dancing Days,45,2025-10-12 05:19:38
+86,I Can't Quit You Baby,48,2025-10-12 05:19:38
+87,Good Times Bad Times,52,2025-10-12 05:19:38
+88,Over the Hills and Far Away,53,2025-10-12 05:19:38
+89,Going to California,54,2025-10-12 05:19:38
+90,Gallows Pole,42,2025-10-12 05:19:38
+91,Whole Lotta Love,50,2025-10-12 05:19:38
+92,Trampled Under Foot,44,2025-10-12 05:19:38
+93,In the Evening,46,2025-10-12 05:19:38
+94,Your Time Is Gonna Come,48,2025-10-12 05:19:38
+95,The Song Remains the Same,45,2025-10-12 05:19:38
+96,When the Levee Breaks,54,2025-10-12 05:19:38
+97,Stairway to Heaven,54,2025-10-12 05:19:38
+98,Kashmir,55,2025-10-12 05:19:38
+99,Black Dog,54,2025-10-12 05:19:38
+100,Bring It On Home,43,2025-10-12 05:19:38
+101,"Power To The People / Intro (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+102,"It's So Hard (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+103,"Born In A Prison (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+104,"Mother (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+105,"Imagine (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+106,"Don’t Worry Kyoko (Mummy’s Only Looking For A Hand In The Snow) [Live At The One To One Concert, Afternoon Show]",56,2025-10-12 05:19:38
+107,"Hound Dog (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+108,"New York City (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+109,"Well Well Well (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+110,"We're All Water (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+111,"Open Your Box (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+112,"Law And Order (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+113,"Give Peace A Chance (feat. Stevie Wonder) [Live At The One To One Concert, Evening Show]",56,2025-10-12 05:19:38
+114,"Power To The People (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+115,"Instant Karma! (We All Shine On) [Live At The One To One Concert, Evening Show]",56,2025-10-12 05:19:38
+116,"New York City (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+117,"Move On Fast (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+118,"Well Well Well (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+119,"We're All Water (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+120,"Come Together (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+121,"Open Your Box (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+122,"Cold Turkey (Live At The One To One Concert, Afternoon Show)",56,2025-10-12 05:19:38
+123,"It's So Hard (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+124,"Move On Fast (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+125,"Mother (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+126,"Born In A Prison (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+127,"Imagine (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+128,"Cold Turkey (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+129,"Hound Dog (Live At The One To One Concert, Evening Show)",56,2025-10-12 05:19:38
+130,Here Comes the Sun,57,2025-10-12 05:19:38
+131,Yesterday,58,2025-10-12 05:19:38
+132,In My Life,59,2025-10-12 05:19:38
+133,Hey Jude,60,2025-10-12 05:19:38
+134,Let It Be,61,2025-10-12 05:19:38
+135,Come Together,57,2025-10-12 05:19:38
+136,Blackbird,62,2025-10-12 05:19:38
+137,Twist and Shout,63,2025-10-12 05:19:38
+138,"Ob-La-Di, Ob-La-Da",62,2025-10-12 05:19:38
+139,I Want to Hold Your Hand,64,2025-10-12 05:19:38
+140,Help!,58,2025-10-12 05:19:38
+141,Strawberry Fields Forever,65,2025-10-12 05:19:38
+142,Eleanor Rigby,66,2025-10-12 05:19:38
+143,And I Love Her,67,2025-10-12 05:19:38
+144,While My Guitar Gently Weeps,62,2025-10-12 05:19:38
+145,I Saw Her Standing There,63,2025-10-12 05:19:38
+146,All My Loving,68,2025-10-12 05:19:38
+147,Michelle,59,2025-10-12 05:19:38
+148,Don't Let Me Down,60,2025-10-12 05:19:38
+149,A Hard Day's Night,67,2025-10-12 05:19:38
+150,Can't Buy Me Love,67,2025-10-12 05:19:38
+151,Get Lucky,69,2025-10-12 05:19:38
+152,One More Time,70,2025-10-12 05:19:38
+153,Around the World,71,2025-10-12 05:19:38
+154,Harder Better Faster Stronger,70,2025-10-12 05:19:38
+155,Instant Crush,72,2025-10-12 05:19:38
+156,I Feel It Coming (feat. Daft Punk),73,2025-10-12 05:19:38
+157,Lose Yourself to Dance,74,2025-10-12 05:19:38
+158,Veridis Quo,70,2025-10-12 05:19:38
+159,Technologic,75,2025-10-12 05:19:38
+160,Something About Us,70,2025-10-12 05:19:38
+161,Robot Rock,75,2025-10-12 05:19:38
+162,Doin' it Right,76,2025-10-12 05:19:38
+163,Da Funk,71,2025-10-12 05:19:38
+164,Daft Punk,77,2025-10-12 05:19:38
+165,Daft Punk,78,2025-10-12 05:19:38
+166,Digital Love,70,2025-10-12 05:19:38
+167,Starboy (feat. Daft Punk),73,2025-10-12 05:19:38
+168,Giorgio by Moroder,79,2025-10-12 05:19:38
+169,Face to Face,70,2025-10-12 05:19:38
+170,Aerodynamic,70,2025-10-12 05:19:38
+171,Around the World (Radio Edit),80,2025-10-12 05:19:38
+172,Give Life Back to Music,79,2025-10-12 05:19:38
+173,"Around the World / Harder, Better, Faster, Stronger (Live)",81,2025-10-12 05:19:38
+174,Daft Punk,82,2025-10-12 05:19:38
+175,End of Line,83,2025-10-12 05:19:38
+176,Voyager,70,2025-10-12 05:19:38
+177,Derezzed,83,2025-10-12 05:19:38
+178,Daft Punk,84,2025-10-12 05:19:38
+179,Fragments of Time,85,2025-10-12 05:19:38
+180,Superheroes,70,2025-10-12 05:19:38
+181,Touch,86,2025-10-12 05:19:38
+182,Crescendolls,70,2025-10-12 05:19:38
+183,I Feel It Coming (feat. Daft Punk),73,2025-10-12 05:19:38
+184,High Life,70,2025-10-12 05:19:38
+185,Contact,79,2025-10-12 05:19:38
+186,The Game of Love,79,2025-10-12 05:19:38
+187,I Feel It Coming (feat. Daft Punk),87,2025-10-12 05:19:38
+188,Get Lucky,88,2025-10-12 05:19:38
+189,Daft Punk (feat. ZENE THE ZILLA),89,2025-10-12 05:19:38
+190,Within,79,2025-10-12 05:19:38
+191,Beyond,79,2025-10-12 05:19:38
+192,Motherboard,79,2025-10-12 05:19:38
+193,The Son of Flynn,83,2025-10-12 05:19:38
+194,Get Lucky (Radio Edit),90,2025-10-12 05:19:38
+195,Around the World,91,2025-10-12 05:19:38
+196,Nightvision,70,2025-10-12 05:19:38
+197,Too Long,70,2025-10-12 05:19:38
+198,Robot Rock / Oh Yeah (Live),81,2025-10-12 05:19:38
+199,End of Line,92,2025-10-12 05:19:38
+200,The Fate of Ophelia,93,2025-10-12 05:19:38
+201,Elizabeth Taylor (Track by Track),93,2025-10-12 05:19:38
+202,Opalite,93,2025-10-12 05:19:38
+203,Elizabeth Taylor,93,2025-10-12 05:19:38
+204,Actually Romantic (Track by Track),93,2025-10-12 05:19:38
+205,Father Figure (Track by Track),93,2025-10-12 05:19:38
+206,Ruin The Friendship,93,2025-10-12 05:19:38
+207,The Fate of Ophelia,93,2025-10-12 05:19:38
+208,The Life of a Showgirl Intro,93,2025-10-12 05:19:38
+209,Elizabeth Taylor,93,2025-10-12 05:19:38
+210,Opalite,93,2025-10-12 05:19:38
+211,The Fate of Ophelia (Track by Track),93,2025-10-12 05:19:38
+212,The Life of a Showgirl Intro,93,2025-10-12 05:19:38
+213,Opalite (Track by Track),93,2025-10-12 05:19:38
+214,Eldest Daughter (Track by Track),93,2025-10-12 05:19:38
+215,Wood (Track by Track),93,2025-10-12 05:19:38
+216,The Fate of Ophelia (Track by Track),93,2025-10-12 05:19:38
+217,Ruin The Friendship (Track by Track),93,2025-10-12 05:19:38
+218,CANCELLED! (Track by Track),93,2025-10-12 05:19:38
+219,Ruin The Friendship,93,2025-10-12 05:19:38
+220,Wi$h Li$t (Track by Track),93,2025-10-12 05:19:38
+221,Father Figure,93,2025-10-12 05:19:38
+222,The Life of a Showgirl (Track by Track),93,2025-10-12 05:19:38
+223,Eldest Daughter,93,2025-10-12 05:19:38
+224,Opalite (Track by Track),93,2025-10-12 05:19:38
+225,Wood,93,2025-10-12 05:19:38
+226,Elizabeth Taylor (Track by Track),93,2025-10-12 05:19:38
+227,Actually Romantic,93,2025-10-12 05:19:38
+228,Wi$h Li$t,93,2025-10-12 05:19:38
+229,Honey (Track by Track),93,2025-10-12 05:19:38
+230,The Life of a Showgirl Outro,93,2025-10-12 05:19:38
+231,Honey,93,2025-10-12 05:19:38
+232,CANCELLED!,93,2025-10-12 05:19:38
+233,The Life of a Showgirl (feat. Sabrina Carpenter),93,2025-10-12 05:19:38
+234,Father Figure (Track by Track),93,2025-10-12 05:19:38
+235,Eldest Daughter (Track by Track),93,2025-10-12 05:19:38
+236,Actually Romantic (Track by Track),93,2025-10-12 05:19:38
+237,Ruin The Friendship (Track by Track),93,2025-10-12 05:19:38
+238,Elizabeth Taylor,94,2025-10-12 05:19:38
+239,Wood (Track by Track),93,2025-10-12 05:19:38
+240,CANCELLED! (Track by Track),93,2025-10-12 05:19:38
+241,Wi$h Li$t (Track by Track),93,2025-10-12 05:19:38
+242,Honey (Track by Track),93,2025-10-12 05:19:38
+243,The Life of a Showgirl (Track by Track),93,2025-10-12 05:19:38
+244,The Life of a Showgirl Outro,93,2025-10-12 05:19:38
+245,Elizabeth Taylor,94,2025-10-12 05:19:38
+246,Opalite,94,2025-10-12 05:19:38
+247,The Fate of Ophelia,94,2025-10-12 05:19:38
+248,Cruel Summer,95,2025-10-12 05:19:38
+249,Ruin The Friendship,94,2025-10-12 05:19:38
+250,luther,96,2025-10-12 05:19:38
+251,LOVE. (feat. Zacari),97,2025-10-12 05:19:38
+252,Don't Wanna Know (feat. Kendrick Lamar) [BRAVVO Remix],98,2025-10-12 05:19:38
+253,Not Like Us,99,2025-10-12 05:19:38
+254,tv off (feat. Lefty Gunplay),100,2025-10-12 05:19:38
+255,squabble up,100,2025-10-12 05:19:38
+256,HUMBLE.,97,2025-10-12 05:19:38
+257,All The Stars,101,2025-10-12 05:19:38
+258,Like That,102,2025-10-12 05:19:38
+259,luther,96,2025-10-12 05:19:38
+260,HUMBLE.,103,2025-10-12 05:19:38
+261,The Greatest (feat. Kendrick Lamar),104,2025-10-12 05:19:38
+262,Don't Wanna Know (feat. Kendrick Lamar),105,2025-10-12 05:19:38
+263,LOVE. (FEAT. ZACARI.),103,2025-10-12 05:19:38
+264,Bad Blood (feat. Kendrick Lamar),106,2025-10-12 05:19:38
+265,Alright,107,2025-10-12 05:19:38
+266,Bad Blood (Taylor's Version) [feat. Kendrick Lamar],108,2025-10-12 05:19:38
+267,peekaboo (feat. AzChike),100,2025-10-12 05:19:38
+268,DNA.,103,2025-10-12 05:19:38
+269,Now Or Never (feat. Mary J. Blige) [Bonus Track],109,2025-10-12 05:19:38
+270,King's Dead,110,2025-10-12 05:19:38
+271,Pray For Me,111,2025-10-12 05:19:38
+272,Freedom (feat. Kendrick Lamar),112,2025-10-12 05:19:38
+273,LOVE. (FEAT. ZACARI.),103,2025-10-12 05:19:38
+274,30 For 30 (with Kendrick Lamar),113,2025-10-12 05:19:38
+275,New Freezer (feat. Kendrick Lamar),114,2025-10-12 05:19:38
+276,DNA.,97,2025-10-12 05:19:38
+277,NILE,115,2025-10-12 05:19:38
+278,Stay Ready (What a Life) [feat. Kendrick Lamar],116,2025-10-12 05:19:38
+279,It's On Again (feat. Kendrick Lamar) [From The Amazing Spider-Man 2 Soundtrack],117,2025-10-12 05:19:38
+280,Poetic Justice (feat. Drake),109,2025-10-12 05:19:38
+281,Money Trees (feat. Jay Rock),109,2025-10-12 05:19:38
+282,LOVE. (FEAT. ZACARI.),97,2025-10-12 05:19:38
+283,ELEMENT.,103,2025-10-12 05:19:38
+284,King Kunta,107,2025-10-12 05:19:38
+285,LOYALTY. (FEAT. RIHANNA.),103,2025-10-12 05:19:38
+286,X,118,2025-10-12 05:19:38
+287,Freedom (feat. Kendrick Lamar),112,2025-10-12 05:19:38
+288,Swimming Pools (Drank) [Extended Version],109,2025-10-12 05:19:38
+289,family ties,119,2025-10-12 05:19:38
+290,Backseat Freestyle,109,2025-10-12 05:19:38
+291,Collard Greens (feat. Kendrick Lamar),120,2025-10-12 05:19:38
+292,untitled 06 l 06.30.2014.,121,2025-10-12 05:19:38
+293,Don't Wanna Know (feat. Kendrick Lamar),105,2025-10-12 05:19:38
+294,Big Shot,122,2025-10-12 05:19:38
+295,The Blacker the Berry,107,2025-10-12 05:19:38
+296,Don't Wanna Know (feat. Kendrick Lamar) [Ryan Riback Remix],123,2025-10-12 05:19:38
+297,Sidewalks (feat. Kendrick Lamar),73,2025-10-12 05:19:38
+298,Mask Off (Remix) [feat. Kendrick Lamar],124,2025-10-12 05:19:38
+299,Someone Like You,125,2025-10-12 05:19:38
+300,Set Fire to the Rain,125,2025-10-12 05:19:38
+301,Rolling in the Deep,125,2025-10-12 05:19:38
+302,Easy On Me,126,2025-10-12 05:19:38
+303,Hello,127,2025-10-12 05:19:38
+304,Love in the Dark,127,2025-10-12 05:19:38
+305,When We Were Young,127,2025-10-12 05:19:38
+306,All I Ask,127,2025-10-12 05:19:38
+307,Make You Feel My Love,128,2025-10-12 05:19:38
+308,Send My Love (To Your New Lover),127,2025-10-12 05:19:38
+309,Chasing Pavements,128,2025-10-12 05:19:38
+310,Water Under the Bridge,127,2025-10-12 05:19:38
+311,Skyfall,129,2025-10-12 05:19:38
+312,Rumour Has It,125,2025-10-12 05:19:38
+313,Turning Tables,125,2025-10-12 05:19:38
+314,One and Only,125,2025-10-12 05:19:38
+315,My Little Love,126,2025-10-12 05:19:38
+316,Don't You Remember,125,2025-10-12 05:19:38
+317,Oh My God,126,2025-10-12 05:19:38
+318,I Drink Wine,126,2025-10-12 05:19:38
+319,To Be Loved,126,2025-10-12 05:19:38
+320,I Miss You,127,2025-10-12 05:19:38
+321,Remedy,127,2025-10-12 05:19:38
+322,Million Years Ago,127,2025-10-12 05:19:38
+323,He Won't Go,125,2025-10-12 05:19:38
+324,Lovesong,125,2025-10-12 05:19:38
+325,Take It All,125,2025-10-12 05:19:38
+326,Hold On,126,2025-10-12 05:19:38
+327,Can I Get It,126,2025-10-12 05:19:38
+328,Woman Like Me,126,2025-10-12 05:19:38
+329,Cry Your Heart Out,126,2025-10-12 05:19:38
+330,adele,130,2025-10-12 05:19:38
+331,Sweetest Devotion,127,2025-10-12 05:19:38
+332,Love Is A Game,126,2025-10-12 05:19:38
+333,I'll Be Waiting,125,2025-10-12 05:19:38
+334,All Night Parking (with Erroll Garner) Interlude,126,2025-10-12 05:19:38
+335,I Can't Make You Love Me (Live),131,2025-10-12 05:19:38
+336,I Found a Boy,125,2025-10-12 05:19:38
+337,River Lea,127,2025-10-12 05:19:38
+338,Strangers By Nature,126,2025-10-12 05:19:38
+339,Crazy for You,128,2025-10-12 05:19:38
+340,Daydreamer,128,2025-10-12 05:19:38
+341,Adele,132,2025-10-12 05:19:38
+342,Right As Rain,128,2025-10-12 05:19:38
+343,Melt My Heart to Stone,128,2025-10-12 05:19:38
+344,First Love,128,2025-10-12 05:19:38
+345,Cold Shoulder,128,2025-10-12 05:19:38
+346,Adele,133,2025-10-12 05:19:38
+347,Best for Last,128,2025-10-12 05:19:38
+348,Tired,128,2025-10-12 05:19:38
+349,Taste,134,2025-10-12 05:19:38
+350,Tears,135,2025-10-12 05:19:38
+351,When Did You Get Hot?,135,2025-10-12 05:19:38
+352,Bed Chem,134,2025-10-12 05:19:38
+353,The Life of a Showgirl (feat. Sabrina Carpenter),93,2025-10-12 05:19:38
+354,Nonsense,136,2025-10-12 05:19:38
+355,The Life of a Showgirl (feat. Sabrina Carpenter),94,2025-10-12 05:19:38
+356,House Tour,135,2025-10-12 05:19:38
+357,Don’t Smile,134,2025-10-12 05:19:38
+358,Thumbs,137,2025-10-12 05:19:38
+359,Espresso,138,2025-10-12 05:19:38
+360,Please Please Please,134,2025-10-12 05:19:38
+361,Sue Me,139,2025-10-12 05:19:38
+362,Why,140,2025-10-12 05:19:38
+363,Skin,141,2025-10-12 05:19:38
+364,Slim Pickins,134,2025-10-12 05:19:38
+365,Coincidence,134,2025-10-12 05:19:38
+366,Feather,142,2025-10-12 05:19:38
+367,Bed Chem,134,2025-10-12 05:19:38
+368,Looking at Me,143,2025-10-12 05:19:38
+369,Taste,144,2025-10-12 05:19:38
+370,Nonsense,142,2025-10-12 05:19:38
+371,Manchild,145,2025-10-12 05:19:38
+372,Please Please Please,146,2025-10-12 05:19:38
+373,Can't Blame a Girl for Trying,147,2025-10-12 05:19:38
+374,Almost Love,139,2025-10-12 05:19:38
+375,Bed Chem,144,2025-10-12 05:19:38
+376,Bad Reviews,144,2025-10-12 05:19:38
+377,Eyes Wide Open,147,2025-10-12 05:19:38
+378,because i liked a boy,142,2025-10-12 05:19:38
+379,Paris,139,2025-10-12 05:19:38
+380,Taste,134,2025-10-12 05:19:38
+381,Espresso,134,2025-10-12 05:19:38
+382,Exhale,143,2025-10-12 05:19:38
+383,Juno,134,2025-10-12 05:19:38
+384,When Did You Get Hot?,135,2025-10-12 05:19:38
+385,On Purpose,137,2025-10-12 05:19:38
+386,Read your Mind,136,2025-10-12 05:19:38
+387,opposite,148,2025-10-12 05:19:38
+388,Honeymoon Fades,149,2025-10-12 05:19:38
+389,santa doesn’t know you like i do,150,2025-10-12 05:19:38
+390,A Nonsense Christmas,151,2025-10-12 05:19:38
+391,Alien,152,2025-10-12 05:19:38
+392,"You're a Mean One, Mr. Grinch (feat. Sabrina Carpenter)",153,2025-10-12 05:19:38
+393,Nonsense,148,2025-10-12 05:19:38
+394,Don’t Smile,144,2025-10-12 05:19:38
+395,cindy lou who,150,2025-10-12 05:19:38
+396,Smoke and Fire,154,2025-10-12 05:19:38
+397,Read your Mind,148,2025-10-12 05:19:38
+398,Slim Pickins,144,2025-10-12 05:19:38
+399,Close To You,155,2025-10-12 05:19:38
+400,"I miss you, I’m sorry",156,2025-10-12 05:19:38
+401,I Told You Things,157,2025-10-12 05:19:38
+402,Risk,155,2025-10-12 05:19:38
+403,Free Now,155,2025-10-12 05:19:38
+404,Blowing Smoke,155,2025-10-12 05:19:38
+405,That’s So True,157,2025-10-12 05:19:38
+406,I know it won't work,158,2025-10-12 05:19:38
+407,"Everywhere, Everything",159,2025-10-12 05:19:38
+408,21,160,2025-10-12 05:19:38
+409,Mess It Up,161,2025-10-12 05:19:38
+410,"I Knew It, I Know You",155,2025-10-12 05:19:38
+411,Feels Like,162,2025-10-12 05:19:38
+412,Stay,163,2025-10-12 05:19:38
+413,Mean It,164,2025-10-12 05:19:38
+414,Friend,165,2025-10-12 05:19:38
+415,"I Love You, I'm Sorry",155,2025-10-12 05:19:38
+416,"I miss you, I’m sorry",165,2025-10-12 05:19:38
+417,Where do we go now?,158,2025-10-12 05:19:38
+418,Brush Fire,166,2025-10-12 05:19:38
+419,Call Me When You Break Up,167,2025-10-12 05:19:38
+420,Risk,157,2025-10-12 05:19:38
+421,Packing It Up,157,2025-10-12 05:19:38
+422,Best,158,2025-10-12 05:19:38
+423,Close To You,157,2025-10-12 05:19:38
+424,21,165,2025-10-12 05:19:38
+425,I know it won't work,168,2025-10-12 05:19:38
+426,Difficult,168,2025-10-12 05:19:38
+427,Gave You I Gave You I,155,2025-10-12 05:19:38
+428,Felt Good About You,155,2025-10-12 05:19:38
+429,Free Now (Live From Vevo),157,2025-10-12 05:19:38
+430,Feels Like,169,2025-10-12 05:19:38
+431,Blowing Smoke,157,2025-10-12 05:19:38
+432,Where do we go now?,168,2025-10-12 05:19:38
+433,Long Sleeves,165,2025-10-12 05:19:38
+434,"I Knew It, I Know You",157,2025-10-12 05:19:38
+435,minor,165,2025-10-12 05:19:38
+436,Free Now,157,2025-10-12 05:19:38
+437,Normal Thing,155,2025-10-12 05:19:38
+438,"I Knew It, I Know You (Live From Vevo)",157,2025-10-12 05:19:38
+439,Felt Good About You,157,2025-10-12 05:19:38
+440,Feels Like,169,2025-10-12 05:19:38
+441,Block me out,170,2025-10-12 05:19:38
+442,Gave You I Gave You I,157,2025-10-12 05:19:38
+443,Good Luck Charlie,155,2025-10-12 05:19:38
+444,Normal Thing,157,2025-10-12 05:19:38
+445,"I Love You, I'm Sorry",157,2025-10-12 05:19:38
+446,tehe,165,2025-10-12 05:19:38
+447,For Real This Time,169,2025-10-12 05:19:38
+448,"Everywhere, Everything",171,2025-10-12 05:19:38
+449,Pink Pony Club,172,2025-10-12 05:19:38
+450,"Good Luck, Babe!",173,2025-10-12 05:19:38
+451,HOT TO GO!,174,2025-10-12 05:19:38
+452,The Giver,175,2025-10-12 05:19:38
+453,My Kink Is Karma,174,2025-10-12 05:19:38
+454,Kaleidoscope,174,2025-10-12 05:19:38
+455,Super Graphic Ultra Modern Girl,174,2025-10-12 05:19:38
+456,Picture You,174,2025-10-12 05:19:38
+457,Love Me Anyway,176,2025-10-12 05:19:38
+458,After Midnight,174,2025-10-12 05:19:38
+459,California,174,2025-10-12 05:19:38
+460,Coffee,174,2025-10-12 05:19:38
+461,Guilty Pleasure,174,2025-10-12 05:19:38
+462,Pink Pony Club,174,2025-10-12 05:19:38
+463,Pink Pony Club,174,2025-10-12 05:19:38
+464,My Kink Is Karma,174,2025-10-12 05:19:38
+465,HOT TO GO!,174,2025-10-12 05:19:38
+466,School Nights,177,2025-10-12 05:19:38
+467,Good Hurt,178,2025-10-12 05:19:38
+468,Super Graphic Ultra Modern Girl,174,2025-10-12 05:19:38
+469,After Midnight,174,2025-10-12 05:19:38
+470,Kaleidoscope,174,2025-10-12 05:19:38
+471,Bitter,179,2025-10-12 05:19:38
+472,Die Young,178,2025-10-12 05:19:38
+473,Red Wine Supernova,174,2025-10-12 05:19:38
+474,Picture You,174,2025-10-12 05:19:38
+475,California,174,2025-10-12 05:19:38
+476,Sugar High,178,2025-10-12 05:19:38
+477,Casual,174,2025-10-12 05:19:38
+478,"Good Luck, Babe!",180,2025-10-12 05:19:38
+479,Meantime,178,2025-10-12 05:19:38
+480,Femininomenon,174,2025-10-12 05:19:38
+481,Kaleidoscope,181,2025-10-12 05:19:38
+482,Guilty Pleasure,174,2025-10-12 05:19:38
+483,Bad for You,178,2025-10-12 05:19:38
+484,Coffee,174,2025-10-12 05:19:38
+485,The Subway,182,2025-10-12 05:19:38
+486,Naked In Manhattan,174,2025-10-12 05:19:38
+487,Pink Pony Club,183,2025-10-12 05:19:38
+488,Pink Pony Club,184,2025-10-12 05:19:38
+489,My Kink Is Karma,185,2025-10-12 05:19:38
+490,Die Young (Acoustic),179,2025-10-12 05:19:38
+491,"Good Luck, Babe!",186,2025-10-12 05:19:38
+492,HOT TO GO!,187,2025-10-12 05:19:38
+493,HOT TO GO!,188,2025-10-12 05:19:38
+494,"Good Luck, Babe!",189,2025-10-12 05:19:38
+495,"Good Luck, Babe!",187,2025-10-12 05:19:38
+496,"Good Luck, Babe! (Mixed)",190,2025-10-12 05:19:38
+497,"Good Luck, Babe! (COASTR. & Leondis Remix) [Mixed]",191,2025-10-12 05:19:38
+498,"Good Luck, Babe! (Mixed)",192,2025-10-12 05:19:38
