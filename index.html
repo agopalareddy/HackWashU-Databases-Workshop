@@ -30,8 +30,10 @@
         <div style="margin-bottom: 1em; font-size: 0.95em; color: #555; background: #f8f9fa; border-radius: 8px; padding: 12px;">
             <strong>Privacy Notice:</strong> Your email and todos are only visible to you in this app. The app uses Row Level Security (RLS) to keep your data private. The app creator (admin) can see all data in the Supabase dashboard, but no one else can see your email or tasks.
             <br><br>
-            <button id="delete-account-btn" style="background:#dc3545; color:white; float:right; margin-top:5px;">Delete My Account</button>
-            <span style="font-size:0.9em; color:#a00;">(This will permanently delete your account and all your todos.)</span>
+            <strong>Note:</strong> To permanently delete your account, please contact the Supabase administrator. You can delete all your tasks using the button below.
+            <br><br>
+            <button id="delete-all-tasks-btn" style="background:#dc3545; color:white; float:right; margin-top:5px;">Delete All My Tasks</button>
+            <span style="font-size:0.9em; color:#a00;">(This will permanently delete all your todos.)</span>
         </div>
         <div class="input-group">
             <input type="text" id="new-todo" placeholder="What needs to be done?" />
@@ -45,8 +47,6 @@
         </details>
     </div>
 
-    <!-- Optional: provide PUBLIC_CONFIG via config.js when deploying to GitHub Pages -->
-    <script src="config.js"></script>
     <script src="app.js" defer></script>
 </body>
 </html>
