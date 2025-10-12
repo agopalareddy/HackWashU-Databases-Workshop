@@ -71,29 +71,38 @@ Welcome to the HackWashU Databases Workshop! This project is designed to introdu
 
 - **Live demo (GitHub Pages):**
   - URL: [https://agopalareddy.github.io/HackWashU-Databases-Workshop/](https://agopalareddy.github.io/HackWashU-Databases-Workshop/)
-  - For Pages deployments, do NOT commit secrets. The app prefers `.env` locally; for demos you can create a local `config.js` (not committed, ignored by `.gitignore`) with:
 
-    ```js
-    window.PUBLIC_CONFIG = {
-      SUPABASE_URL: "https://your-project.supabase.co",
-      SUPABASE_ANON_KEY: "your-anon-key",
-    };
-    ```
+  - For GitHub Pages deployments, **do NOT commit secrets**. The app loads `.env` locally for development, but on Pages, `config.js` is generated automatically at deploy time by GitHub Actions using repository secrets.
+  - **To deploy your own instance:**
+    1. Fork this repo.
+    2. In your GitHub repo, go to Settings → Secrets and variables → Actions → New repository secret.
+    3. Add `SUPABASE_URL` and `SUPABASE_ANON_KEY` as secrets (values from your Supabase project).
+    4. Push to `main` to trigger deploy. The workflow will generate `config.js` with your secrets for Pages (never committed to git).
+    5. Your app will be live at `https://<your-username>.github.io/<repo-name>/`.
 
-    This is suitable for public demos because the Supabase anon key is designed to be public, but still treat it carefully and rely on RLS policies.
+    The Supabase anon key is designed to be public, but always rely on RLS policies for security.
 
 ---
 
-## Supabase Setup Notes
+
+## Supabase Setup & Deployment Notes
 
 - Create a `todos` table with columns: `id`, `task`, `user_id`, `is_complete`, `created_at`.
 - Enable RLS and add policies for SELECT, INSERT, UPDATE, DELETE:
   - Example: `user_id = auth.uid()`
-- Use your project's URL and anon key in `.env`.
+  - Use your project's URL and anon key in `.env` for local dev, and as GitHub repo secrets for Pages deploy.
+
+### GitHub Actions/Pages Deployment
+
+- The workflow in `.github/workflows/pages.yml` builds the site and injects your Supabase config as `config.js` at deploy time.
+- **Never commit `config.js` or secrets to git.**
+- Add your Supabase credentials as repo secrets (`SUPABASE_URL`, `SUPABASE_ANON_KEY`).
+- On push to `main`, the workflow deploys to GitHub Pages with secrets injected securely.
 
 ---
 
-## Troubleshooting
+
+## Troubleshooting & Tips
 
 - If the web app doesn't load secrets, make sure you are running a local server (not opening HTML directly).
 - If you see RLS errors, check your Supabase policies.

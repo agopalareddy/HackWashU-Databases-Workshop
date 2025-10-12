@@ -27,6 +27,12 @@
             <span class="welcome-text">Welcome, <span id="user-email"></span>! 👋</span>
             <button id="logout-btn">Log Out</button>
         </div>
+        <div style="margin-bottom: 1em; font-size: 0.95em; color: #555; background: #f8f9fa; border-radius: 8px; padding: 12px;">
+            <strong>Privacy Notice:</strong> Your email and todos are only visible to you in this app. The app uses Row Level Security (RLS) to keep your data private. The app creator (admin) can see all data in the Supabase dashboard, but no one else can see your email or tasks.
+            <br><br>
+            <button id="delete-account-btn" style="background:#dc3545; color:white; float:right; margin-top:5px;">Delete My Account</button>
+            <span style="font-size:0.9em; color:#a00;">(This will permanently delete your account and all your todos.)</span>
+        </div>
         <div class="input-group">
             <input type="text" id="new-todo" placeholder="What needs to be done?" />
             <button id="add-todo-btn">➕ Add Task</button>

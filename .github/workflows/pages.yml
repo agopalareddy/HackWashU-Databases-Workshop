@@ -1,57 +1,57 @@
 name: Deploy GitHub Pages
 
 on:
-  push:
-    branches: [ main ]
+    push:
+        branches: [main]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+    contents: read
+    pages: write
+    id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: true
+    group: "pages"
+    cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+            - name: Setup Pages
+              uses: actions/configure-pages@v4
 
-      - name: Build site
-        run: |
-          set -e
-          mkdir -p _site
-          cp index.html _site/
-          cp styles.css _site/
-          cp app.js _site/
-          cp .nojekyll _site/
-          # Create config.js from repository secrets
-          cat > _site/config.js << 'EOF'
-          // Generated at deploy time for GitHub Pages
-          window.PUBLIC_CONFIG = {
-            SUPABASE_URL: "${{ secrets.SUPABASE_URL }}",
-            SUPABASE_ANON_KEY: "${{ secrets.SUPABASE_ANON_KEY }}",
-          };
-          EOF
+            - name: Build site
+              run: |
+                  set -e
+                  mkdir -p _site
+                  cp index.html _site/
+                  cp styles.css _site/
+                  cp app.js _site/
+                  cp .nojekyll _site/
+                  # Create config.js from repository secrets
+                  cat > _site/config.js << 'EOF'
+                  // Generated at deploy time for GitHub Pages
+                  window.PUBLIC_CONFIG = {
+                    SUPABASE_URL: "${{ secrets.SUPABASE_URL }}",
+                    SUPABASE_ANON_KEY: "${{ secrets.SUPABASE_ANON_KEY }}",
+                  };
+                  EOF
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: _site
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    deploy:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
