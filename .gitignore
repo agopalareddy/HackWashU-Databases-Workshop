@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+*.sqlite
+*.db
+*.DS_Store
+*.env
+# Jupyter
+.ipynb_checkpoints/
+# HTML residuals
+*.html~
+*.bak
+*.tmp
+# PowerPoint
+*.pptx
+# VS Code
+.vscode/
