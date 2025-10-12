@@ -7,7 +7,6 @@ __pycache__/
 *.egg-info/
 *.egg
 *.log
-*.sqlite
 *.db
 *.DS_Store
 *.env
@@ -21,3 +20,6 @@ __pycache__/
 *.pptx
 # VS Code
 .vscode/
+
+# Client-side config containing public keys (do not commit secrets)
+config.js
