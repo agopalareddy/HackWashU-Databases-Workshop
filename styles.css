@@ -1,0 +1,194 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2em 1em;
+    color: #343a40;
+}
+
+h1 { 
+    text-align: center; 
+    color: white; 
+    margin-bottom: 2em; 
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+h2 { 
+    color: #007bff; 
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+input[type="email"], input[type="password"], input[type="text"] { 
+    width: 100%; 
+    padding: 12px 15px; 
+    margin-bottom: 15px; 
+    border: 2px solid #e0e0e0; 
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button { 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 8px; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer; 
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button:hover { 
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#logout-btn { 
+    background-color: #dc3545; 
+    float: right;
+}
+
+#logout-btn:hover {
+    background-color: #c82333;
+}
+
+#auth-view, #app-view { 
+    background-color: white; 
+    padding: 2.5em; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.welcome-bar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-text {
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+#todo-list, #completed-list { 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li, #completed-list li { 
+    padding: 15px; 
+    border-bottom: 1px solid #f0f0f0; 
+    display: flex; 
+    align-items: center;
+    gap: 12px;
+    background: white;
+    transition: background 0.2s;
+}
+
+#todo-list li:hover, #completed-list li:hover {
+    background: #f8f9fa;
+}
+
+#todo-list li:last-child, #completed-list li:last-child {
+    border-bottom: none;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task-actions button {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 12px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #007bff;
+}
+
+details {
+    margin-top: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    color: #667eea;
+    font-size: 16px;
+    user-select: none;
+}
+
+summary:hover {
+    color: #764ba2;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.auth-buttons button {
+    flex: 1;
+    margin: 0;
+}
+
+.todo-section-title {
+    color: #667eea;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}

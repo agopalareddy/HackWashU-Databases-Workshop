@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Secure Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <h1>Supabase Secure Todo App</h1>
+
+    <!-- View shown when user is not logged in -->
+    <div id="auth-view">
+        <h2>Sign Up or Log In</h2>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <div class="auth-buttons">
+            <button id="signup-btn">Sign Up</button>
+            <button id="login-btn">Log In</button>
+        </div>
+    </div>
+
+    <!-- View shown when user is logged in -->
+    <div id="app-view" style="display: none;">
+        <div class="welcome-bar">
+            <span class="welcome-text">Welcome, <span id="user-email"></span>! 👋</span>
+            <button id="logout-btn">Log Out</button>
+        </div>
+        <div class="input-group">
+            <input type="text" id="new-todo" placeholder="What needs to be done?" />
+            <button id="add-todo-btn">➕ Add Task</button>
+        </div>
+        <div class="todo-section-title">📝 Active Tasks</div>
+        <ul id="todo-list"></ul>
+        <details id="completed-section">
+            <summary>✅ Completed Tasks</summary>
+            <ul id="completed-list"></ul>
+        </details>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
