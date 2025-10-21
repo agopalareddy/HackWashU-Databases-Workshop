@@ -68,9 +68,9 @@ We'll build a music library with three related tables:
 ├─────────────┤       ├─────────────┤       ├─────────────┤
 │ id (PK)     │◄──┐   │ id (PK)     │◄──┐   │ id (PK)     │
 │ name        │   │   │ title       │   │   │ title       │
-└─────────────┘   │   │ artist_id   │   │   │ album_id    │
-                  └───│ genre       │   └───│ created_at  │
-                      │ release_year│       └─────────────┘
+└─────────────┘   │   │ artist_id   │   └───│ album_id    │
+                  └───│ genre       │       └─────────────┘
+                      │ release_year│       
                       └─────────────┘
 ```
 
@@ -824,7 +824,6 @@ cursor.execute('''
         title TEXT NOT NULL,
         album_id INTEGER NOT NULL,
         duration INTEGER,  -- Duration in seconds
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY (album_id) REFERENCES albums(id)
     )
 ''')

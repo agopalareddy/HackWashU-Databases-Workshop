@@ -130,7 +130,7 @@ artists (id, name)
    ↓
 albums (id, title, artist_id, genre, release_year)
    ↓
-songs (id, title, album_id, created_at)
+songs (id, title, album_id)
 ```
 
 ---
