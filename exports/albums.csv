@@ -1,4 +1,4 @@
-id,title,artist_id,genre,release_year
+id,title,artist_id,genre,year
 1,Short n' Sweet,1,Pop,2024
 2,Man’s Best Friend,1,Pop,2025
 3,emails i can't send,1,Pop,2022
@@ -13,197 +13,337 @@ id,title,artist_id,genre,release_year
 12,Manchild - Single,1,Pop,2025
 13,Eyes Wide Open,1,Pop,2014
 14,Short n' Sweet (Deluxe),2,Pop,2024
-15,emails i can’t send fwd:,1,Pop,2023
-16,The Life of a Showgirl,3,Pop,2025
-17,A Nonsense Christmas - Single,1,Pop,2022
-18,Honeymoon Fades - Single,1,Pop,2020
-19,fruitcake - EP,1,Holiday,2023
-20,Alien - Single,4,Pop,2018
-21,Warmer In The Winter (Deluxe Edition),5,Holiday,2017
-22,WOW (Remix) [feat. Sabrina Carpenter] - Single,6,Pop,2020
-23,Smoke and Fire - Single,1,Pop,2016
-24,The Secret of Us,7,Pop,2024
-25,"I miss you, I’m sorry - Single",7,Pop,2020
-26,The Secret of Us (Deluxe),7,Pop,2024
-27,Good Riddance,7,Pop,2023
-28,"Everywhere, Everything - Single",8,Alternative,2023
-29,21 - Single,7,Pop,2020
-30,Mess It Up - Single,7,Pop,2021
-31,Stay - Single,7,Pop,2019
-32,Mean It - Single,7,Alternative,2019
-33,minor,7,Pop,2020
-34,Feels Like - Single,7,Pop,2021
-35,I Said I Love You First,9,Pop,2025
-36,Brush Fire - Single,7,Pop,2020
-37,Good Riddance (Deluxe),7,Pop,2022
-38,This Is What It Feels Like,7,Pop,2021
-39,Block me out - Single,7,Pop,2023
-40,Stick Season (Forever),8,Alternative,2023
-41,Pink Pony Club - Single,10,Pop,2020
-42,"Good Luck, Babe! - Single",10,Pop,2024
-43,The Rise and Fall of a Midwest Princess,10,Pop,2023
-44,The Giver - Single,10,Country,2025
-45,Love Me Anyway - Single,10,Pop,2020
-46,School Nights - Single,10,Alternative,2018
-47,School Nights - EP,10,Alternative,2017
-48,Bitter - Single,10,Alternative,2018
-49,Spring Vibes 2025,10,Pop,2024
-50,Kaleidoscope - Single,10,Pop,2023
-51,The Subway - Single,10,Pop,2025
-52,Top Hits pra você curtir em 2025,10,Pop,2020
-53,My Kink Is Karma - Single,10,Pop,2022
-54,Chart Hits Deutschland 2025,10,Pop,2024
-55,Arbeitsmusik 2025,10,Pop,2023
-56,Demure Friday,10,Pop,2023
-57,Pop Anglo Que No Saldrá de Tu Cabeza,10,Pop,2020
-58,California - Single,10,Pop,2020
-59,VSQ Performs the Hits Of 2024,11,Classical Crossover,2024
-60,2024 Megamix (DJ Mix),10,Pop,2024
-61,Today's Hits: November 2024 (DJ Mix),10,Pop,2024
-62,hopeless fountain kingdom (Deluxe),12,Alternative,2017
-63,Collage - EP,13,Dance,2016
-64,FRIENDS KEEP SECRETS,14,Pop,2018
-65,Manic,12,Alternative,2019
-66,Badlands (Decade Edition Anthology),12,Alternative,2015
-67,Vol. II,12,Alternative,2020
-68,BADLANDS (Deluxe Edition),12,Alternative,2015
-69,kelsea,15,Country,2020
-70,Be Kind - Single,16,Dance,2020
-71,MAP OF THE SOUL : PERSONA,17,K-Pop,2019
-72,Sing 2 (Original Motion Picture Soundtrack),12,Soundtrack,2021
-73,Eastside (Acoustic) - Single,14,Pop,2018
-74,Chill Mood,14,Pop,2018
-75,Alone (feat. Big Sean & Stefflon Don) - Single,12,Alternative,2017
-76,So Good - Single,12,Alternative,2022
-77,Purpose (Deluxe),18,Pop,2015
-78,Vol. I,12,Alternative,2020
-79,Closer (feat. Halsey) [Remixes] - EP,13,Dance,2016
-80,MAP OF THE SOUL : 7,17,K-Pop,2019
-81,Fifty Shades Darker (Original Motion Picture Soundtrack),12,Soundtrack,2017
-82,So Close To What,19,Pop,2025
-83,I’m The Problem,20,Country,2025
-84,F1 The Album,19,Pop,2025
-85,she's all i wanna be - Single,19,Pop,2022
-86,all the things i never said - EP,19,Pop,2020
-87,DRIVE,21,Dance,2022
-88,TOO YOUNG TO BE SAD (Apple Music Edition) - EP,19,Pop,2021
-89,One Day - Single,19,Pop,2017
-90,stupid - Single,19,Pop,2019
-91,THINK LATER,19,Pop,2023
-92,lie to me - Single,22,Pop,2020
-93,i used to think i could fly,19,Pop,2022
-94,Teenage Mind - Single,19,Pop,2018
-95,Just Keep Watching (From F1® The Movie) - Single,19,Pop,2025
-96,vicious,19,Pop,2020
-97,rubberband - Single,19,Pop,2021
-98,slower (Apple Music Edition) - Single,19,Pop,2021
-99,greedy - Single,19,Pop,2023
-100,exes - Single,19,Pop,2023
-101,don't be sad - Single,19,Pop,2020
-102,tear myself apart - Single,19,Pop,2019
-103,You - Single,23,Dance,2021
-104,that way - Single,24,Pop,2021
-105,Hung up on You - Single,19,Pop,2017
-106,It's ok I'm ok - Single,19,Pop,2024
-107,Wishbone,25,Pop,2025
-108,Kid Krow,25,Pop,2020
-109,Memories - Single,25,Pop,2022
-110,Superache,25,Pop,2022
-111,People Watching - Single,25,Pop,2021
-112,Astronomy - Single,25,Pop,2021
-113,Sunset Season - EP,25,Pop,2018
-114,Telepath - Single,25,Pop,2021
-115,The King - Single,25,Pop,2019
-116,Found Heaven,25,Pop,2024
-117,The Other Side - Single,25,Pop,2019
-118,Grow - Single,25,Pop,2017
-119,Kid Krow (Bonus Videos Edition),25,Pop,2019
-120,Never Ending Song - Single,25,Alternative,2023
-121,Superache (Bonus Videos Edition),25,Pop,2021
-122,Blurryface,26,Alternative,2015
-123,Suicide Squad: The Album,26,Alternative,2016
-124,Trench,26,Alternative,2018
-125,Vessel,26,Alternative,2011
-126,Breach,26,Alternative,2025
-127,Clancy,26,Alternative,2024
-128,Level of Concern - Single,26,Alternative,2020
-129,Scaled And Icy,26,Alternative,2021
-130,Arcane League of Legends: Season 2 (Soundtrack from the Animated Series),27,Pop,2024
-131,Cancer - Single,26,Alternative,2016
-132,Twenty One Pilots,26,Rock,2009
-133,The Craving (single version) - Single,26,Alternative,2024
-134,Lover,3,Pop,2019
-135,1989,3,Pop,2014
-136,Fearless (Platinum Edition),3,Country,2008
-137,Taylor Swift (Bonus Track Version),3,Country,2006
-138,Red,3,Country,2012
-139,reputation,3,Pop,2017
-140,Fearless,3,Country,2008
-141,Midnights (3am Edition),3,Pop,2022
-142,Speak Now,3,Country,2010
-143,Fearless (Taylor's Version),3,Country,2021
-144,Fifty Shades Darker (Original Motion Picture Soundtrack),28,Soundtrack,2016
-145,New Money,29,Country,2023
-146,folklore,3,Alternative,2020
-147,Midnights,3,Pop,2022
-148,THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY,3,Pop,2024
-149,Taylor Swift + Partner in Crime - Single,30,Country,2022
-150,Speak Now (Taylor's Version),3,Pop,2023
-151,1989 (Deluxe Edition),3,Pop,2014
-152,Thriller,31,Pop,1982
-153,Off the Wall,31,Pop,1979
-154,The Essential Michael Jackson,31,Pop,1987
-155,Dangerous,31,Pop,1991
-156,XSCAPE (Deluxe),31,Pop,2014
-157,Invincible,31,Pop,2001
-158,Michael Jackson's This Is It (The Music That Inspired the Movie),31,Soundtrack,1996
-159,Bad (25th Anniversary Edition),31,Pop,1987
-160,Scorpion,32,Hip-Hop/Rap,2018
-161,"HIStory - PAST, PRESENT AND FUTURE - BOOK I",31,Pop,1995
-162,XSCAPE (Deluxe),33,Pop,2014
-163,Bad,31,Pop,1987
-164,Number Ones,31,Pop,2001
-165,Live Talkin' Sh--,34,Comedy,2005
-166,Abbey Road (Remastered),35,Rock,1969
-167,Help!,35,Rock,1965
-168,Rubber Soul,35,Rock,1965
-169,Let It Be,35,Rock,1970
-170,The Beatles 1967-1970 (The Blue Album),35,Rock,1968
-171,Power To The People (New York City - The Ultimate Mixes),36,Rock,2025
-172,The Beatles (The White Album),35,Rock,1968
-173,Please Please Me,35,Rock,1963
-174,Revolver,35,Rock,1966
-175,Magical Mystery Tour,35,Rock,1967
-176,"Past Masters, Vols. 1 & 2",35,Rock,1963
-177,Sgt. Pepper's Lonely Hearts Club Band,35,Rock,1967
-178,A Hard Day's Night,35,Rock,1964
-179,Yellow Submarine,35,Rock,1966
-180,With The Beatles,35,Rock,1963
-181,Beatles For Sale,35,Rock,1964
-182,Abbey Road (2019 Mix),35,Rock,1969
-183,Anthology 4,35,Rock,2010
-184,Discovery,37,Dance,2000
-185,Random Access Memories,38,Pop,2013
-186,Homework,37,Dance,1997
-187,Random Access Memories,39,Pop,2013
-188,Starboy,40,R&B/Soul,2016
-189,Random Access Memories,41,Pop,2013
-190,Human After All,37,House,2005
-191,Random Access Memories,42,Pop,2013
-192,"PTX, Vol. II - EP",43,Pop,2013
-193,PTX,43,Pop,2014
-194,Alive 2007,37,Electronic,2007
-195,Random Access Memories,37,Pop,2013
-196,Happiness Forever,43,Pop,2013
-197,Around the World - EP,37,Dance,1997
-198,TRON: Legacy (Original Motion Picture Soundtrack),37,Original Score,2010
-199,Daft Punk - Single,44,Pop,2023
-200,Random Access Memories,45,Pop,2013
-201,Random Access Memories,46,Pop,2013
-202,Starboy (Deluxe),40,R&B/Soul,2016
-203,Han Yo Han,47,K-Pop,2021
-204,Random Access Memories (10th Anniversary Edition),38,Pop,2013
-205,Homework (25th Anniversary Edition),37,Dance,1997
-206,TRON: Legacy - The Complete Edition (Original Motion Picture Soundtrack),37,Original Score,2010
-207,2010s Hits,38,Electronica,2013
-208,Random Access Memories (10th Anniversary Edition),48,Dance,2013
+15,The Secret of Us,3,Pop,2024
+16,"I miss you, I’m sorry - Single",3,Pop,2020
+17,The Secret of Us (Deluxe),3,Pop,2024
+18,Good Riddance,3,Pop,2023
+19,"Everywhere, Everything - Single",4,Alternative,2023
+20,21 - Single,3,Pop,2020
+21,Mess It Up - Single,3,Pop,2021
+22,Stay - Single,3,Pop,2019
+23,Mean It - Single,3,Alternative,2019
+24,minor,3,Pop,2020
+25,Feels Like - Single,3,Pop,2021
+26,I Said I Love You First,5,Pop,2025
+27,Brush Fire - Single,3,Pop,2020
+28,Good Riddance (Deluxe),3,Pop,2022
+29,Pink Pony Club - Single,6,Pop,2020
+30,"Good Luck, Babe! - Single",6,Pop,2024
+31,The Rise and Fall of a Midwest Princess,6,Pop,2023
+32,The Giver - Single,6,Country,2025
+33,Love Me Anyway - Single,6,Pop,2020
+34,School Nights - Single,6,Alternative,2018
+35,School Nights - EP,6,Alternative,2017
+36,Bitter - Single,6,Alternative,2018
+37,hopeless fountain kingdom (Deluxe),7,Alternative,2017
+38,Collage - EP,8,Dance,2016
+39,FRIENDS KEEP SECRETS,9,Pop,2018
+40,Manic,7,Alternative,2019
+41,Badlands (Decade Edition Anthology),7,Alternative,2015
+42,Vol. II,7,Alternative,2020
+43,BADLANDS (Deluxe Edition),7,Alternative,2015
+44,kelsea,10,Country,2020
+45,Be Kind - Single,11,Dance,2020
+46,MAP OF THE SOUL : PERSONA,12,K-Pop,2019
+47,Sing 2 (Original Motion Picture Soundtrack),7,Soundtrack,2021
+48,Eastside (Acoustic) - Single,9,Pop,2018
+49,Chill Mood,9,Pop,2018
+50,Alone (feat. Big Sean & Stefflon Don) - Single,7,Alternative,2017
+51,So Close To What,13,Pop,2025
+52,I’m The Problem,14,Country,2025
+53,F1 The Album,13,Pop,2025
+54,she's all i wanna be - Single,13,Pop,2022
+55,all the things i never said - EP,13,Pop,2020
+56,DRIVE,15,Dance,2022
+57,TOO YOUNG TO BE SAD (Apple Music Edition) - EP,13,Pop,2021
+58,One Day - Single,13,Pop,2017
+59,stupid - Single,13,Pop,2019
+60,THINK LATER,13,Pop,2023
+61,lie to me - Single,16,Pop,2020
+62,i used to think i could fly,13,Pop,2022
+63,Teenage Mind - Single,13,Pop,2018
+64,Just Keep Watching (From F1® The Movie) - Single,13,Pop,2025
+65,vicious,13,Pop,2020
+66,rubberband - Single,13,Pop,2021
+67,slower (Apple Music Edition) - Single,13,Pop,2021
+68,Wishbone,17,Pop,2025
+69,Kid Krow,17,Pop,2020
+70,Memories - Single,17,Pop,2022
+71,Superache,17,Pop,2022
+72,People Watching - Single,17,Pop,2021
+73,Astronomy - Single,17,Pop,2021
+74,Sunset Season - EP,17,Pop,2018
+75,Telepath - Single,17,Pop,2021
+76,The King - Single,17,Pop,2019
+77,Found Heaven,17,Pop,2024
+78,The Other Side - Single,17,Pop,2019
+79,Blurryface,18,Alternative,2015
+80,Suicide Squad: The Album,18,Alternative,2016
+81,Trench,18,Alternative,2018
+82,Vessel,18,Alternative,2011
+83,Breach,18,Alternative,2025
+84,Clancy,18,Alternative,2024
+85,Level of Concern - Single,18,Alternative,2020
+86,Scaled And Icy,18,Alternative,2021
+87,Lover,19,Pop,2019
+88,1989,19,Pop,2014
+89,Fearless (Platinum Edition),19,Country,2008
+90,Taylor Swift (Bonus Track Version),19,Country,2006
+91,Red,19,Country,2012
+92,reputation,19,Pop,2017
+93,Fearless,19,Country,2008
+94,Midnights (3am Edition),19,Pop,2022
+95,The Life of a Showgirl,19,Pop,2025
+96,Speak Now,19,Country,2010
+97,Fearless (Taylor's Version),19,Country,2021
+98,Fifty Shades Darker (Original Motion Picture Soundtrack),20,Soundtrack,2016
+99,Thriller,21,Pop,1982
+100,Off the Wall,21,Pop,1979
+101,The Essential Michael Jackson,21,Pop,1987
+102,Dangerous,21,Pop,1991
+103,XSCAPE (Deluxe),21,Pop,2014
+104,Invincible,21,Pop,2001
+105,Michael Jackson's This Is It (The Music That Inspired the Movie),21,Soundtrack,1996
+106,Bad (25th Anniversary Edition),21,Pop,1987
+107,Scorpion,22,Hip-Hop/Rap,2018
+108,"HIStory - PAST, PRESENT AND FUTURE - BOOK I",21,Pop,1995
+109,XSCAPE (Deluxe),23,Pop,2014
+110,Abbey Road (Remastered),24,Rock,1969
+111,Help!,24,Rock,1965
+112,Rubber Soul,24,Rock,1965
+113,Let It Be,24,Rock,1970
+114,The Beatles 1967-1970 (The Blue Album),24,Rock,1968
+115,Power To The People (New York City - The Ultimate Mixes),25,Rock,2025
+116,The Beatles (The White Album),24,Rock,1968
+117,Please Please Me,24,Rock,1963
+118,Revolver,24,Rock,1966
+119,Magical Mystery Tour,24,Rock,1967
+120,"Past Masters, Vols. 1 & 2",24,Rock,1963
+121,Sgt. Pepper's Lonely Hearts Club Band,24,Rock,1967
+122,A Hard Day's Night,24,Rock,1964
+123,Yellow Submarine,24,Rock,1966
+124,Discovery,26,Dance,2000
+125,Random Access Memories,27,Pop,2013
+126,Homework,26,Dance,1997
+127,Random Access Memories,28,Pop,2013
+128,Starboy,29,R&B/Soul,2016
+129,Random Access Memories,30,Pop,2013
+130,Human After All,26,House,2005
+131,Random Access Memories,31,Pop,2013
+132,"PTX, Vol. II - EP",32,Pop,2013
+133,PTX,32,Pop,2014
+134,Alive 2007,26,Electronic,2007
+135,Random Access Memories,26,Pop,2013
+136,Happiness Forever,32,Pop,2013
+137,Around the World - EP,26,Dance,1997
+138,TRON: Legacy (Original Motion Picture Soundtrack),26,Original Score,2010
+139,Daft Punk - Single,33,Pop,2023
+140,Random Access Memories,34,Pop,2013
+141,Short n' Sweet,1,Pop,2024
+142,Man’s Best Friend,1,Pop,2025
+143,emails i can't send,1,Pop,2022
+144,EVOLution,1,Pop,2016
+145,Espresso - Single,1,Pop,2024
+146,Singular Act I,1,Pop,2018
+147,Why - Single,1,Pop,2017
+148,Skin - Single,1,Pop,2021
+149,Singular Act II,1,Pop,2019
+150,Short n' Sweet (Deluxe),1,Pop,2024
+151,emails i can't send fwd:,1,Pop,2023
+152,Manchild - Single,1,Pop,2025
+153,Eyes Wide Open,1,Pop,2014
+154,Short n' Sweet (Deluxe),2,Pop,2024
+155,emails i can’t send fwd:,1,Pop,2023
+156,The Life of a Showgirl,19,Pop,2025
+157,A Nonsense Christmas - Single,1,Pop,2022
+158,Honeymoon Fades - Single,1,Pop,2020
+159,fruitcake - EP,1,Holiday,2023
+160,Alien - Single,35,Pop,2018
+161,Warmer In The Winter (Deluxe Edition),36,Holiday,2017
+162,WOW (Remix) [feat. Sabrina Carpenter] - Single,37,Pop,2020
+163,Smoke and Fire - Single,1,Pop,2016
+164,The Secret of Us,3,Pop,2024
+165,"I miss you, I’m sorry - Single",3,Pop,2020
+166,The Secret of Us (Deluxe),3,Pop,2024
+167,Good Riddance,3,Pop,2023
+168,"Everywhere, Everything - Single",4,Alternative,2023
+169,21 - Single,3,Pop,2020
+170,Mess It Up - Single,3,Pop,2021
+171,Stay - Single,3,Pop,2019
+172,Mean It - Single,3,Alternative,2019
+173,minor,3,Pop,2020
+174,Feels Like - Single,3,Pop,2021
+175,I Said I Love You First,5,Pop,2025
+176,Brush Fire - Single,3,Pop,2020
+177,Good Riddance (Deluxe),3,Pop,2022
+178,This Is What It Feels Like,3,Pop,2021
+179,Block me out - Single,3,Pop,2023
+180,Stick Season (Forever),4,Alternative,2023
+181,Pink Pony Club - Single,6,Pop,2020
+182,"Good Luck, Babe! - Single",6,Pop,2024
+183,The Rise and Fall of a Midwest Princess,6,Pop,2023
+184,The Giver - Single,6,Country,2025
+185,Love Me Anyway - Single,6,Pop,2020
+186,School Nights - Single,6,Alternative,2018
+187,School Nights - EP,6,Alternative,2017
+188,Bitter - Single,6,Alternative,2018
+189,Spring Vibes 2025,6,Pop,2024
+190,Kaleidoscope - Single,6,Pop,2023
+191,The Subway - Single,6,Pop,2025
+192,Top Hits pra você curtir em 2025,6,Pop,2020
+193,My Kink Is Karma - Single,6,Pop,2022
+194,Chart Hits Deutschland 2025,6,Pop,2024
+195,Arbeitsmusik 2025,6,Pop,2023
+196,Demure Friday,6,Pop,2023
+197,Pop Anglo Que No Saldrá de Tu Cabeza,6,Pop,2020
+198,California - Single,6,Pop,2020
+199,VSQ Performs the Hits Of 2024,38,Classical Crossover,2024
+200,2024 Megamix (DJ Mix),6,Pop,2024
+201,Today's Hits: November 2024 (DJ Mix),6,Pop,2024
+202,hopeless fountain kingdom (Deluxe),7,Alternative,2017
+203,Collage - EP,8,Dance,2016
+204,FRIENDS KEEP SECRETS,9,Pop,2018
+205,Manic,7,Alternative,2019
+206,Badlands (Decade Edition Anthology),7,Alternative,2015
+207,Vol. II,7,Alternative,2020
+208,BADLANDS (Deluxe Edition),7,Alternative,2015
+209,kelsea,10,Country,2020
+210,Be Kind - Single,11,Dance,2020
+211,MAP OF THE SOUL : PERSONA,12,K-Pop,2019
+212,Sing 2 (Original Motion Picture Soundtrack),7,Soundtrack,2021
+213,Eastside (Acoustic) - Single,9,Pop,2018
+214,Chill Mood,9,Pop,2018
+215,Alone (feat. Big Sean & Stefflon Don) - Single,7,Alternative,2017
+216,So Good - Single,7,Alternative,2022
+217,Purpose (Deluxe),39,Pop,2015
+218,Vol. I,7,Alternative,2020
+219,Closer (feat. Halsey) [Remixes] - EP,8,Dance,2016
+220,MAP OF THE SOUL : 7,12,K-Pop,2019
+221,Fifty Shades Darker (Original Motion Picture Soundtrack),7,Soundtrack,2017
+222,So Close To What,13,Pop,2025
+223,I’m The Problem,14,Country,2025
+224,F1 The Album,13,Pop,2025
+225,she's all i wanna be - Single,13,Pop,2022
+226,all the things i never said - EP,13,Pop,2020
+227,DRIVE,15,Dance,2022
+228,TOO YOUNG TO BE SAD (Apple Music Edition) - EP,13,Pop,2021
+229,One Day - Single,13,Pop,2017
+230,stupid - Single,13,Pop,2019
+231,THINK LATER,13,Pop,2023
+232,lie to me - Single,16,Pop,2020
+233,i used to think i could fly,13,Pop,2022
+234,Teenage Mind - Single,13,Pop,2018
+235,Just Keep Watching (From F1® The Movie) - Single,13,Pop,2025
+236,vicious,13,Pop,2020
+237,rubberband - Single,13,Pop,2021
+238,slower (Apple Music Edition) - Single,13,Pop,2021
+239,greedy - Single,13,Pop,2023
+240,exes - Single,13,Pop,2023
+241,don't be sad - Single,13,Pop,2020
+242,tear myself apart - Single,13,Pop,2019
+243,You - Single,40,Dance,2021
+244,that way - Single,41,Pop,2021
+245,Hung up on You - Single,13,Pop,2017
+246,It's ok I'm ok - Single,13,Pop,2024
+247,Wishbone,17,Pop,2025
+248,Kid Krow,17,Pop,2020
+249,Memories - Single,17,Pop,2022
+250,Superache,17,Pop,2022
+251,People Watching - Single,17,Pop,2021
+252,Astronomy - Single,17,Pop,2021
+253,Sunset Season - EP,17,Pop,2018
+254,Telepath - Single,17,Pop,2021
+255,The King - Single,17,Pop,2019
+256,Found Heaven,17,Pop,2024
+257,The Other Side - Single,17,Pop,2019
+258,Grow - Single,17,Pop,2017
+259,Kid Krow (Bonus Videos Edition),17,Pop,2019
+260,Never Ending Song - Single,17,Alternative,2023
+261,Superache (Bonus Videos Edition),17,Pop,2021
+262,Blurryface,18,Alternative,2015
+263,Suicide Squad: The Album,18,Alternative,2016
+264,Trench,18,Alternative,2018
+265,Vessel,18,Alternative,2011
+266,Breach,18,Alternative,2025
+267,Clancy,18,Alternative,2024
+268,Level of Concern - Single,18,Alternative,2020
+269,Scaled And Icy,18,Alternative,2021
+270,Arcane League of Legends: Season 2 (Soundtrack from the Animated Series),42,Pop,2024
+271,Cancer - Single,18,Alternative,2016
+272,Twenty One Pilots,18,Rock,2009
+273,The Craving (single version) - Single,18,Alternative,2024
+274,Lover,19,Pop,2019
+275,1989,19,Pop,2014
+276,Fearless (Platinum Edition),19,Country,2008
+277,Taylor Swift (Bonus Track Version),19,Country,2006
+278,Red,19,Country,2012
+279,reputation,19,Pop,2017
+280,Fearless,19,Country,2008
+281,Midnights (3am Edition),19,Pop,2022
+282,Speak Now,19,Country,2010
+283,Fearless (Taylor's Version),19,Country,2021
+284,Fifty Shades Darker (Original Motion Picture Soundtrack),20,Soundtrack,2016
+285,New Money,43,Country,2023
+286,folklore,19,Alternative,2020
+287,Midnights,19,Pop,2022
+288,THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY,19,Pop,2024
+289,Taylor Swift + Partner in Crime - Single,44,Country,2022
+290,Speak Now (Taylor's Version),19,Pop,2023
+291,1989 (Deluxe Edition),19,Pop,2014
+292,Thriller,21,Pop,1982
+293,Off the Wall,21,Pop,1979
+294,The Essential Michael Jackson,21,Pop,1987
+295,Dangerous,21,Pop,1991
+296,XSCAPE (Deluxe),21,Pop,2014
+297,Invincible,21,Pop,2001
+298,Michael Jackson's This Is It (The Music That Inspired the Movie),21,Soundtrack,1996
+299,Bad (25th Anniversary Edition),21,Pop,1987
+300,Scorpion,22,Hip-Hop/Rap,2018
+301,"HIStory - PAST, PRESENT AND FUTURE - BOOK I",21,Pop,1995
+302,XSCAPE (Deluxe),23,Pop,2014
+303,Bad,21,Pop,1987
+304,Number Ones,21,Pop,2001
+305,Live Talkin' Sh--,45,Comedy,2005
+306,Abbey Road (Remastered),24,Rock,1969
+307,Help!,24,Rock,1965
+308,Rubber Soul,24,Rock,1965
+309,Let It Be,24,Rock,1970
+310,The Beatles 1967-1970 (The Blue Album),24,Rock,1968
+311,Power To The People (New York City - The Ultimate Mixes),25,Rock,2025
+312,The Beatles (The White Album),24,Rock,1968
+313,Please Please Me,24,Rock,1963
+314,Revolver,24,Rock,1966
+315,Magical Mystery Tour,24,Rock,1967
+316,"Past Masters, Vols. 1 & 2",24,Rock,1963
+317,Sgt. Pepper's Lonely Hearts Club Band,24,Rock,1967
+318,A Hard Day's Night,24,Rock,1964
+319,Yellow Submarine,24,Rock,1966
+320,With The Beatles,24,Rock,1963
+321,Beatles For Sale,24,Rock,1964
+322,Abbey Road (2019 Mix),24,Rock,1969
+323,Anthology 4,24,Rock,2010
+324,Discovery,26,Dance,2000
+325,Random Access Memories,27,Pop,2013
+326,Homework,26,Dance,1997
+327,Random Access Memories,28,Pop,2013
+328,Starboy,29,R&B/Soul,2016
+329,Random Access Memories,30,Pop,2013
+330,Human After All,26,House,2005
+331,Random Access Memories,31,Pop,2013
+332,"PTX, Vol. II - EP",32,Pop,2013
+333,PTX,32,Pop,2014
+334,Alive 2007,26,Electronic,2007
+335,Random Access Memories,26,Pop,2013
+336,Happiness Forever,32,Pop,2013
+337,Around the World - EP,26,Dance,1997
+338,TRON: Legacy (Original Motion Picture Soundtrack),26,Original Score,2010
+339,Daft Punk - Single,33,Pop,2023
+340,Random Access Memories,34,Pop,2013
+341,Random Access Memories,46,Pop,2013
+342,Starboy (Deluxe),29,R&B/Soul,2016
+343,Han Yo Han,47,K-Pop,2021
+344,Random Access Memories (10th Anniversary Edition),27,Pop,2013
+345,Homework (25th Anniversary Edition),26,Dance,1997
+346,TRON: Legacy - The Complete Edition (Original Motion Picture Soundtrack),26,Original Score,2010
+347,2010s Hits,27,Electronica,2013
+348,Random Access Memories (10th Anniversary Edition),48,Dance,2013
