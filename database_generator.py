@@ -1,298 +1,299 @@
 """
 Music Library Database Generator
-===============================
-This script creates a music database by fetching data from iTunes API.
-It creates three related tables: artists, albums, and songs.
-All files are saved in an 'exports' folder.
+=================================
+A beginner-friendly script that:
+1. Fetches music data from iTunes API
+2. Saves it to a SQLite database
+3. Exports tables to CSV files
+
+Created for HackWashU Databases Workshop
 """
 
-import sqlite3
-import os
-import requests
 import csv
-from datetime import datetime
+import os
+import sqlite3
+import requests
 
-# Configuration
-EXPORTS_FOLDER = "exports"
-DB_FILE = os.path.join(EXPORTS_FOLDER, "music_library.sqlite")
-NUMBER_OF_SONGS_PER_ARTIST = 50  # Number of songs to fetch per artist
+# ============================================
+# CONFIGURATION - Change these if you want!
+# ============================================
 
-# Artists to fetch from iTunes API
-ARTISTS_TO_FETCH = [
+# List of artists to search for
+ARTISTS = [
     "Sabrina Carpenter",
     "Gracie Abrams",
     "Chappel Roan",
     "Halsey",
     "Tate McRae",
     "Conan Gray",
-    "Twenty One Pilots",  
-    "Taylor Swift", 
+    "Twenty One Pilots",
+    "Taylor Swift",
     "Michael Jackson",
     "The Beatles",
-    "Daft Punk", 
+    "Daft Punk",
 ]
 
+# How many songs to fetch per artist
+SONGS_PER_ARTIST = 50
 
-def check_requirements():
-    """Check if required libraries are installed."""
-    try:
-        import requests
-
-        print("✓ All required libraries are available")
-        return True
-    except ImportError:
-        print("=" * 50)
-        print("ERROR: The 'requests' library is not installed.")
-        print("Please install it by running this command in your terminal:")
-        print("pip install requests")
-        print("=" * 50)
-        return False
+# Where to save files
+EXPORTS_FOLDER = "exports"
+DATABASE_FILE = os.path.join(EXPORTS_FOLDER, "music_library.db")
 
 
-def create_exports_folder():
-    """Create the exports folder if it doesn't exist."""
-    if not os.path.exists(EXPORTS_FOLDER):
-        os.makedirs(EXPORTS_FOLDER)
-        print(f"Created '{EXPORTS_FOLDER}' folder")
-    else:
-        print(f"Using existing '{EXPORTS_FOLDER}' folder")
+# ============================================
+# STEP 1: CREATE DATABASE TABLES
+# ============================================
 
 
-def clean_old_database():
-    """Remove old database file to start fresh."""
-    if os.path.exists(DB_FILE):
-        os.remove(DB_FILE)
-        print(f"Removed old database file: {DB_FILE}")
+def create_tables(cursor):
+    """
+    Create three tables for our music library:
+    - artists: stores artist names
+    - albums: stores album info (linked to artists)
+    - songs: stores song names (linked to albums)
+    """
+    print("\n📋 Creating database tables...")
 
-
-def create_database_tables(cursor):
-    """Create the three main tables: artists, albums, songs."""
-    print("Creating database tables...")
-
-    # Enable foreign key support (important for table relationships)
+    # Enable foreign keys (this makes table relationships work)
     cursor.execute("PRAGMA foreign_keys = ON;")
 
-    # Artists table - stores each artist once
+    # Table 1: Artists
     cursor.execute(
         """
-    CREATE TABLE artists (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL UNIQUE
-    );
+        CREATE TABLE IF NOT EXISTS artists (
+            id INTEGER PRIMARY KEY,
+            name TEXT UNIQUE NOT NULL
+        )
     """
     )
 
-    # Albums table - stores albums and links to artists
+    # Table 2: Albums (connected to artists)
     cursor.execute(
         """
-    CREATE TABLE albums (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        title TEXT NOT NULL,
-        artist_id INTEGER NOT NULL,
-        genre TEXT,
-        release_year INTEGER,
-        FOREIGN KEY (artist_id) REFERENCES artists (id)
-    );
+        CREATE TABLE IF NOT EXISTS albums (
+            id INTEGER PRIMARY KEY,
+            title TEXT NOT NULL,
+            artist_id INTEGER NOT NULL,
+            genre TEXT,
+            year INTEGER,
+            FOREIGN KEY (artist_id) REFERENCES artists(id)
+        )
     """
     )
 
-    # Songs table - stores songs and links to albums
+    # Table 3: Songs (connected to albums)
     cursor.execute(
         """
-    CREATE TABLE songs (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        title TEXT NOT NULL,
-        album_id INTEGER NOT NULL,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        FOREIGN KEY (album_id) REFERENCES albums (id)
-    );
+        CREATE TABLE IF NOT EXISTS songs (
+            id INTEGER PRIMARY KEY,
+            title TEXT NOT NULL,
+            album_id INTEGER NOT NULL,
+            FOREIGN KEY (album_id) REFERENCES albums(id)
+        )
     """
     )
 
-    print("✓ Tables created successfully")
+    print("✅ Tables created!")
+
+
+# ============================================
+# STEP 2: FETCH DATA FROM ITUNES API
+# ============================================
 
 
 def fetch_songs_from_itunes(artist_name):
-    """Fetch songs for an artist from iTunes API."""
-    print(f"→ Fetching songs for '{artist_name}'...")
+    """
+    Fetch songs from the iTunes API for a given artist.
+    Returns a list of song data (or empty list if error).
+    """
+    print(f"\n🔍 Searching iTunes for '{artist_name}'...")
 
-    # Build API URL
-    url = f"https://itunes.apple.com/search?term={artist_name.replace(' ', '+')}&entity=song&limit={NUMBER_OF_SONGS_PER_ARTIST}"
+    # Build the API URL (replace spaces with + signs)
+    search_term = artist_name.replace(" ", "+")
+    url = f"https://itunes.apple.com/search?term={search_term}&entity=song&limit={SONGS_PER_ARTIST}"
 
     try:
+        # Make the request to iTunes
         response = requests.get(url, timeout=10)
-        response.raise_for_status()
         data = response.json()
         results = data.get("results", [])
-        print(f"  Found {len(results)} songs")
+
+        print(f"   Found {len(results)} songs!")
         return results
-    except requests.exceptions.RequestException as e:
-        print(f"  ⚠ Error fetching data for {artist_name}: {e}")
+
+    except Exception as error:
+        print(f"   ⚠️ Error: {error}")
         return []
 
 
-def process_api_data(cursor):
-    """Process all API data and insert into database."""
-    print("\nProcessing music data...")
+# ============================================
+# STEP 3: SAVE DATA TO DATABASE
+# ============================================
 
-    # Keep track of what we've already added to avoid duplicates
-    artist_cache = {}  # artist_name -> artist_id
-    album_cache = {}  # (album_title, artist_id) -> album_id
-    songs_to_add = []  # list of (song_title, album_id) tuples
 
-    # Process each artist
-    for artist_name in ARTISTS_TO_FETCH:
-        api_results = fetch_songs_from_itunes(artist_name)
+def save_to_database(cursor, all_songs):
+    """
+    Save all the song data to our database tables.
+    We use dictionaries to avoid duplicate entries.
+    """
+    print("\n💾 Saving to database...")
 
-        for song_data in api_results:
-            # Get the important information from the API
-            artist_name_api = song_data.get("artistName")
-            album_title = song_data.get("collectionName")
-            song_title = song_data.get("trackName")
+    # Dictionaries to track what we've already saved
+    saved_artists = {}  # artist_name -> artist_id
+    saved_albums = {}  # (album_title, artist_id) -> album_id
 
-            # Skip if we're missing essential data
-            if not all([artist_name_api, album_title, song_title]):
-                continue
+    song_count = 0
 
-            # Handle the artist (add if new)
-            if artist_name_api not in artist_cache:
-                cursor.execute(
-                    "INSERT INTO artists (name) VALUES (?)", (artist_name_api,)
-                )
-                artist_id = cursor.lastrowid
-                artist_cache[artist_name_api] = artist_id
-            else:
-                artist_id = artist_cache[artist_name_api]
+    # Go through each song from the API
+    for song in all_songs:
+        # Get the data we need from the API response
+        artist_name = song.get("artistName")
+        album_title = song.get("collectionName")
+        song_title = song.get("trackName")
+        genre = song.get("primaryGenreName")
+        release_date = song.get("releaseDate", "")
 
-            # Handle the album (add if new)
-            album_key = (album_title, artist_id)
-            if album_key not in album_cache:
-                # Try to get the release year
-                release_year = None
-                if "releaseDate" in song_data:
-                    try:
-                        release_year = datetime.strptime(
-                            song_data["releaseDate"], "%Y-%m-%dT%H:%M:%SZ"
-                        ).year
-                    except ValueError:
-                        pass  # If date format is weird, just skip it
+        # Skip if missing important data
+        if not artist_name or not album_title or not song_title:
+            continue
 
-                cursor.execute(
-                    "INSERT INTO albums (title, artist_id, genre, release_year) VALUES (?, ?, ?, ?)",
-                    (
-                        album_title,
-                        artist_id,
-                        song_data.get("primaryGenreName"),
-                        release_year,
-                    ),
-                )
-                album_id = cursor.lastrowid
-                album_cache[album_key] = album_id
-            else:
-                album_id = album_cache[album_key]
+        # Get year from date (e.g., "2024-10-15T07:00:00Z" -> 2024)
+        year = None
+        if release_date:
+            year = release_date.split("-")[0]  # Get first part before "-"
+            try:
+                year = int(year)
+            except:
+                year = None
 
-            # Add song to our list (we'll insert all songs at once later)
-            songs_to_add.append((song_title, album_id))
+        # STEP 1: Save artist (if we haven't already)
+        if artist_name not in saved_artists:
+            cursor.execute(
+                "INSERT OR IGNORE INTO artists (name) VALUES (?)", (artist_name,)
+            )
+            cursor.execute("SELECT id FROM artists WHERE name = ?", (artist_name,))
+            saved_artists[artist_name] = cursor.fetchone()[0]
 
-    # Insert all songs at once (this is faster than one by one)
-    if songs_to_add:
-        print(f"Adding {len(songs_to_add)} songs to database...")
-        cursor.executemany(
-            "INSERT INTO songs (title, album_id) VALUES (?, ?)", songs_to_add
+        artist_id = saved_artists[
+            artist_name
+        ]  # STEP 2: Save album (if we haven't already)
+        album_key = (album_title, artist_id)
+        if album_key not in saved_albums:
+            cursor.execute(
+                "INSERT INTO albums (title, artist_id, genre, year) VALUES (?, ?, ?, ?)",
+                (album_title, artist_id, genre, year),
+            )
+            saved_albums[album_key] = cursor.lastrowid
+
+        album_id = saved_albums[album_key]
+
+        # STEP 3: Save song
+        cursor.execute(
+            "INSERT INTO songs (title, album_id) VALUES (?, ?)", (song_title, album_id)
         )
-        print(f"✓ Added {len(songs_to_add)} songs")
-        print(
-            f"✓ Database now has {len(artist_cache)} artists and {len(album_cache)} albums"
-        )
-    else:
-        print("⚠ No songs were processed")
+        song_count += 1
+
+    print(
+        f"✅ Saved {len(saved_artists)} artists, {len(saved_albums)} albums, {song_count} songs!"
+    )
 
 
-def export_table_to_csv(cursor, table_name):
-    """Export a database table to a CSV file."""
-    csv_file = os.path.join(EXPORTS_FOLDER, f"{table_name}.csv")
+# ============================================
+# STEP 4: EXPORT TO CSV FILES
+# ============================================
 
+
+def export_to_csv(cursor, table_name):
+    """
+    Export a database table to a CSV file.
+    CSV = Comma Separated Values (opens in Excel!)
+    Uses Python's built-in csv module for proper formatting.
+    """
     # Get all data from the table
     cursor.execute(f"SELECT * FROM {table_name}")
     rows = cursor.fetchall()
 
     if not rows:
-        print(f"⚠ Table '{table_name}' is empty, skipping CSV export")
+        print(f"   ⚠️ Table '{table_name}' is empty")
         return
 
-    # Get column names
-    column_names = [description[0] for description in cursor.description]
+    # Get column names (like "id", "name", etc.)
+    columns = [description[0] for description in cursor.description]
 
-    # Write to CSV file
-    with open(csv_file, "w", newline="", encoding="utf-8") as file:
+    # Write to CSV file using csv module
+    filename = os.path.join(EXPORTS_FOLDER, f"{table_name}.csv")
+    with open(filename, "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(column_names)  # Write headers
-        writer.writerows(rows)  # Write data
 
-    print(f"✓ Exported {len(rows)} rows from '{table_name}' to {csv_file}")
+        # Write header row
+        writer.writerow(columns)
+
+        # Write all data rows
+        writer.writerows(rows)
+
+    print(f"   ✅ Exported {len(rows)} rows to {filename}")
 
 
-def export_all_tables_to_csv(cursor):
-    """Export all tables to CSV files."""
-    print("\nExporting tables to CSV files...")
-    tables = ["artists", "albums", "songs"]
-
-    for table in tables:
-        export_table_to_csv(cursor, table)
+# ============================================
+# MAIN PROGRAM
+# ============================================
 
 
 def main():
-    """Main function that runs everything step by step."""
-    print("Music Library Database Generator")
-    print("=" * 40)
+    """
+    Main function that runs the whole program!
+    """
+    print("=" * 50)
+    print("🎵 MUSIC LIBRARY DATABASE GENERATOR")
+    print("=" * 50)
 
-    # Step 1: Check if we have everything we need
-    if not check_requirements():
-        return
+    # Create exports folder if it doesn't exist
+    if not os.path.exists(EXPORTS_FOLDER):
+        os.makedirs(EXPORTS_FOLDER)
+        print(f"✅ Created '{EXPORTS_FOLDER}' folder")
 
-    # Step 2: Create the exports folder
-    create_exports_folder()
+    # Connect to database (creates file if it doesn't exist)
+    connection = sqlite3.connect(DATABASE_FILE)
+    cursor = connection.cursor()
+    print(f"✅ Connected to database: {DATABASE_FILE}")
 
-    # Step 3: Clean up old database
-    clean_old_database()
+    # Create our three tables
+    create_tables(cursor)
 
-    conn = None  # Initialize conn to None
-    # Step 4: Create and populate the database
-    try:
-        # Connect to database
-        conn = sqlite3.connect(DB_FILE)
-        cursor = conn.cursor()
-        print(f"✓ Connected to database: {DB_FILE}")
+    # Fetch songs from iTunes for each artist
+    all_songs = []
+    for artist in ARTISTS:
+        songs = fetch_songs_from_itunes(artist)
+        all_songs.extend(songs)  # Add to our master list
 
-        # Create tables
-        create_database_tables(cursor)
+    print(f"\n📊 Total songs collected: {len(all_songs)}")
 
-        # Get data from iTunes and add to database
-        process_api_data(cursor)
+    # Save everything to the database
+    if all_songs:
+        save_to_database(cursor, all_songs)
+        connection.commit()  # Save changes permanently
 
-        # Save changes
-        conn.commit()
-        print("✓ All changes saved to database")
+    # Export to CSV files
+    print("\n📄 Exporting to CSV files...")
+    export_to_csv(cursor, "artists")
+    export_to_csv(cursor, "albums")
+    export_to_csv(cursor, "songs")
 
-        # Export to CSV files
-        export_all_tables_to_csv(cursor)
+    # Close the database connection
+    connection.close()
 
-    except sqlite3.Error as e:
-        print(f"❌ Database error: {e}")
-    except Exception as e:
-        print(f"❌ Unexpected error: {e}")
-    finally:  # Always close the database connection
-        if conn:
-            conn.close()  # Close the connection if it was successfully opened
-            print("✓ Database connection closed")
-
-    print(f"\n🎉 Done! Check the '{EXPORTS_FOLDER}' folder for your files:")
-    print(f"   - music_library.sqlite (database)")
-    print(f"   - artists.csv (artists table)")
-    print(f"   - albums.csv (albums table)")
-    print(f"   - songs.csv (songs table)")
+    print("\n" + "=" * 50)
+    print("🎉 ALL DONE!")
+    print("=" * 50)
+    print(f"Check the '{EXPORTS_FOLDER}' folder for these files:")
+    print(f"  • music_library.db (SQLite database)")
+    print(f"  • artists.csv")
+    print(f"  • albums.csv")
+    print(f"  • songs.csv")
+    print("\nOpen the .db file in a SQLite viewer to explore!")
 
 
-# Run the program when this file is executed
+# This runs the program when you execute the file
 if __name__ == "__main__":
     main()
