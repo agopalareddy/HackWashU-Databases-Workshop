@@ -15,6 +15,7 @@ from datetime import datetime
 # Configuration
 EXPORTS_FOLDER = "exports"
 DB_FILE = os.path.join(EXPORTS_FOLDER, "music_library.sqlite")
+NUMBER_OF_SONGS_PER_ARTIST = 50  # Number of songs to fetch per artist
 
 # Artists to fetch from iTunes API
 ARTISTS_TO_FETCH = [
@@ -116,7 +117,7 @@ def fetch_songs_from_itunes(artist_name):
     print(f"→ Fetching songs for '{artist_name}'...")
 
     # Build API URL
-    url = f"https://itunes.apple.com/search?term={artist_name.replace(' ', '+')}&entity=song&limit=50"
+    url = f"https://itunes.apple.com/search?term={artist_name.replace(' ', '+')}&entity=song&limit={NUMBER_OF_SONGS_PER_ARTIST}"
 
     try:
         response = requests.get(url, timeout=10)
