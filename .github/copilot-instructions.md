@@ -17,6 +17,7 @@ Purpose: HackWashU Databases Workshop - beginner-friendly educational workshop w
 ## Big picture and data flow
 
 ### Python Music Library (`database_generator.py`)
+
 - Script flow (see `main()`): create `exports/` folder → connect SQLite → create tables → fetch iTunes data for each artist → deduplicate and insert artists/albums/songs → commit → export all tables to CSV
 - Tables and relationships (foreign keys enabled):
   - `artists(id, name UNIQUE)`
@@ -42,6 +43,7 @@ artists 1 ────────────< albums 1 ───────�
 ## How to run (Windows PowerShell)
 
 ### Part 1: Python Music Library
+
 Requires Python 3.x and the `requests` package.
 
 ```pwsh
@@ -54,10 +56,12 @@ python explore_db.py
 ```
 
 Outputs appear in `exports/`:
+
 - `music_library.db` (SQLite database)
 - `artists.csv`, `albums.csv`, `songs.csv` (exported via Python's csv module)
 
 ### Part 2: Supabase Todo App
+
 Requires a Supabase account and project setup.
 
 ```pwsh
@@ -148,15 +152,15 @@ sqlite3 .\exports\music_library.sqlite "SELECT a.name, count(al.id) FROM artists
 | ------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ModuleNotFoundError: No module named 'requests'` | Dependency missing                          | Install via `python -m pip install requests`, then rerun the script.                                                                                  |
 | `⚠ Error fetching data for <artist>` and 0 songs  | Network hiccup or API rate limiting         | Re-run; optionally reduce the artist list or `limit` in `fetch_songs_from_itunes`. Network errors are per-artist and safe to retry.                   |
-| Empty CSVs or DB                                  | API returned no results or run failed early | Use the Quick SQLite checks above; confirm artists in `ARTISTS` and ensure the script completed (look for "Done!" log).                      |
+| Empty CSVs or DB                                  | API returned no results or run failed early | Use the Quick SQLite checks above; confirm artists in `ARTISTS` and ensure the script completed (look for "Done!" log).                               |
 | SQLite FK constraint errors                       | Foreign keys disabled in other tooling      | The script sets `PRAGMA foreign_keys = ON;`. If writing to the DB externally, enable FKs in your session too.                                         |
 | `database is locked` on Windows                   | DB open in another app                      | Close viewers (VS Code SQL extensions, DB browsers) while the script writes, then retry.                                                              |
 | Supabase: login works but no todos load           | RLS blocks SELECT                           | Add a SELECT policy on `todos`: `using (user_id = auth.uid())`. Then refresh to pull the user’s rows.                                                 |
 | Supabase: insert fails with RLS error             | RLS blocks INSERT                           | Add an INSERT policy with a WITH CHECK: `with check (user_id = auth.uid())`. App inserts `user_id` from the session already.                          |
 | Supabase: todos insert but show for all users     | Missing RLS                                 | Ensure RLS is enabled and at least the SELECT policy above exists.                                                                                    |
-| Supabase: 401/invalid key                         | Wrong `SUPABASE_URL`/`SUPABASE_ANON_KEY`    | Check `.env` file values or update `loadConfig()` function in `app.js` with correct values from Supabase settings.                                     |
-| `.env` file not loading                           | Not using local server or wrong path        | Must use `python -m http.server 8000` (can't open HTML directly). Ensure `.env` is in project root, same folder as `index.html`.                       |
-| `.env` file format errors                         | Extra quotes, spaces, or wrong filename     | Format should be `KEY=value` (no spaces, no quotes). File must be named `.env` not `.env.txt`.                                                          |
+| Supabase: 401/invalid key                         | Wrong `SUPABASE_URL`/`SUPABASE_ANON_KEY`    | Check `.env` file values or update `loadConfig()` function in `app.js` with correct values from Supabase settings.                                    |
+| `.env` file not loading                           | Not using local server or wrong path        | Must use `python -m http.server 8000` (can't open HTML directly). Ensure `.env` is in project root, same folder as `index.html`.                      |
+| `.env` file format errors                         | Extra quotes, spaces, or wrong filename     | Format should be `KEY=value` (no spaces, no quotes). File must be named `.env` not `.env.txt`.                                                        |
 | Supabase: user_id null on insert                  | Missing session                             | Ensure the user is logged in (app uses `onAuthStateChange`); if testing manually, call `auth.getUser()` before insert and include `user_id: user.id`. |
 
 ## Database Explorer (`explore_db.py`)
