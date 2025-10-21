@@ -18,16 +18,17 @@ DB_FILE = os.path.join(EXPORTS_FOLDER, "music_library.sqlite")
 
 # Artists to fetch from iTunes API
 ARTISTS_TO_FETCH = [
-    "Queen",
-    "Led Zeppelin",
-    "The Beatles",
-    "Daft Punk",
-    "Taylor Swift",
-    "Kendrick Lamar",
-    "Adele",
     "Sabrina Carpenter",
     "Gracie Abrams",
     "Chappel Roan",
+    "Halsey",
+    "Tate McRae",
+    "Conan Gray",
+    "Twenty One Pilots",  
+    "Taylor Swift", 
+    "Michael Jackson",
+    "The Beatles",
+    "Daft Punk", 
 ]
 
 
